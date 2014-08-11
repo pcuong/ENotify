@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79305D751998A63300CB5029 /* ELCRtu.m in Sources */ = {isa = PBXBuildFile; fileRef = 79305D741998A63300CB5029 /* ELCRtu.m */; };
 		79E2385C1998A1CA00B47304 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E2385B1998A1CA00B47304 /* Foundation.framework */; };
 		79E2385E1998A1CA00B47304 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E2385D1998A1CA00B47304 /* CoreGraphics.framework */; };
 		79E238601998A1CA00B47304 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E2385F1998A1CA00B47304 /* UIKit.framework */; };
@@ -23,6 +24,7 @@
 		79E238831998A1CA00B47304 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E2385F1998A1CA00B47304 /* UIKit.framework */; };
 		79E2388B1998A1CA00B47304 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E238891998A1CA00B47304 /* InfoPlist.strings */; };
 		79E2388D1998A1CA00B47304 /* ENotifyV2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E2388C1998A1CA00B47304 /* ENotifyV2Tests.m */; };
+		A344CF8473864EF2BD69CBFA /* libPods-ENotifyV2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E75C0C861234B98B25C0B84 /* libPods-ENotifyV2.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E75C0C861234B98B25C0B84 /* libPods-ENotifyV2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ENotifyV2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6262EF837C5345959712B2AD /* Pods-ENotifyV2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ENotifyV2.xcconfig"; path = "Pods/Pods-ENotifyV2.xcconfig"; sourceTree = "<group>"; };
+		79305D731998A63300CB5029 /* ELCRtu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ELCRtu.h; path = ENotifyV2/ELCRtu.h; sourceTree = "<group>"; };
+		79305D741998A63300CB5029 /* ELCRtu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ELCRtu.m; path = ENotifyV2/ELCRtu.m; sourceTree = "<group>"; };
+		79305D781998A98400CB5029 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Common.h; path = ENotifyV2/Common.h; sourceTree = "<group>"; };
 		79E238581998A1CA00B47304 /* ENotifyV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ENotifyV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E2385B1998A1CA00B47304 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79E2385D1998A1CA00B47304 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,6 +75,7 @@
 				79E2385E1998A1CA00B47304 /* CoreGraphics.framework in Frameworks */,
 				79E238601998A1CA00B47304 /* UIKit.framework in Frameworks */,
 				79E2385C1998A1CA00B47304 /* Foundation.framework in Frameworks */,
+				A344CF8473864EF2BD69CBFA /* libPods-ENotifyV2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,13 +92,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79305D761998A64700CB5029 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				79305D781998A98400CB5029 /* Common.h */,
+				79305D731998A63300CB5029 /* ELCRtu.h */,
+				79305D741998A63300CB5029 /* ELCRtu.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		79E2384F1998A1C900B47304 = {
 			isa = PBXGroup;
 			children = (
+				79305D761998A64700CB5029 /* Classes */,
 				79E238611998A1CA00B47304 /* ENotifyV2 */,
 				79E238861998A1CA00B47304 /* ENotifyV2Tests */,
 				79E2385A1998A1CA00B47304 /* Frameworks */,
 				79E238591998A1CA00B47304 /* Products */,
+				6262EF837C5345959712B2AD /* Pods-ENotifyV2.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +130,7 @@
 				79E2385D1998A1CA00B47304 /* CoreGraphics.framework */,
 				79E2385F1998A1CA00B47304 /* UIKit.framework */,
 				79E238801998A1CA00B47304 /* XCTest.framework */,
+				4E75C0C861234B98B25C0B84 /* libPods-ENotifyV2.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -167,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79E238901998A1CA00B47304 /* Build configuration list for PBXNativeTarget "ENotifyV2" */;
 			buildPhases = (
+				517616DC8C6642EE8BDF028B /* Check Pods Manifest.lock */,
 				79E238541998A1CA00B47304 /* Sources */,
 				79E238551998A1CA00B47304 /* Frameworks */,
 				79E238561998A1CA00B47304 /* Resources */,
+				5C94CE0BF2D44BA48B9D3E8A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,6 +231,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = PCuong;
 				TargetAttributes = {
+					79E238571998A1CA00B47304 = {
+						DevelopmentTeam = U5TV6SAVJ7;
+					};
 					79E2387E1998A1CA00B47304 = {
 						TestTargetID = 79E238571998A1CA00B47304;
 					};
@@ -254,6 +280,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		517616DC8C6642EE8BDF028B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5C94CE0BF2D44BA48B9D3E8A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ENotifyV2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		79E238541998A1CA00B47304 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -262,6 +321,7 @@
 				79E238751998A1CA00B47304 /* ELCMasterViewController.m in Sources */,
 				79E238681998A1CA00B47304 /* main.m in Sources */,
 				79E238781998A1CA00B47304 /* ELCDetailViewController.m in Sources */,
+				79305D751998A63300CB5029 /* ELCRtu.m in Sources */,
 				79E2386C1998A1CA00B47304 /* ELCAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,9 +454,11 @@
 		};
 		79E238911998A1CA00B47304 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6262EF837C5345959712B2AD /* Pods-ENotifyV2.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ENotifyV2/ENotifyV2-Prefix.pch";
 				INFOPLIST_FILE = "ENotifyV2/ENotifyV2-Info.plist";
@@ -407,9 +469,11 @@
 		};
 		79E238921998A1CA00B47304 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6262EF837C5345959712B2AD /* Pods-ENotifyV2.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ENotifyV2/ENotifyV2-Prefix.pch";
 				INFOPLIST_FILE = "ENotifyV2/ENotifyV2-Info.plist";
@@ -477,6 +541,7 @@
 				79E238921998A1CA00B47304 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79E238931998A1CA00B47304 /* Build configuration list for PBXNativeTarget "ENotifyV2Tests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +550,7 @@
 				79E238951998A1CA00B47304 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
