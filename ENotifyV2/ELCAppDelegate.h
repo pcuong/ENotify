@@ -11,5 +11,10 @@
 @interface ELCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (readonly, nonatomic) NSString* baseRESTFulUrl;
+
++(ELCAppDelegate*)sharedAppDelegate;
++(void)alert:(NSString*)title otherValue:(NSString*)message;
++(void)vibrateIPhone;
 
 @end

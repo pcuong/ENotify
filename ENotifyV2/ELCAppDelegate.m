@@ -7,6 +7,9 @@
 //
 
 #import "ELCAppDelegate.h"
+#import <AFNetworking/AFNetworking.h>
+#import <AFNetworking/AFNetworkActivityIndicatorManager.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @implementation ELCAppDelegate
 
@@ -18,6 +21,12 @@
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
         splitViewController.delegate = (id)navigationController.topViewController;
     }
+    
+    // Dia chi RESTFul
+    _baseRESTFulUrl = @"http://118.70.169.1:8778/RESTFul";
+    
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = TRUE;
+    
     return YES;
 }
 							
@@ -48,4 +57,30 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
++(void)alert:(NSString*)title otherValue:(NSString*)message {
+    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"Xác nhận" otherButtonTitles:nil, nil];
+    
+    [alert show];
+}
+
++ (ELCAppDelegate *)sharedAppDelegate
+{
+    return (ELCAppDelegate *) [UIApplication sharedApplication].delegate;
+}
+
++ (void)vibrateIPhone
+{
+    //There are two seemingly similar functions that take a parameter kSystemSoundID_Vibrate:
+    
+    //1) AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+    //2) AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+    //Both the functions vibrate the iPhone. But when you use the first function on devices that don’t support vibration, it plays a beep sound. The second function on the other hand does nothing on unsupported devices. So if you are going to vibrate the device continuously, as a alert, common sense says, use function 2.
+    
+    //    See also "iPhone Tutorial: Better way to check capabilities of iOS devices" article.
+    
+    //    First, add the AudioToolbox framework (AudioToolbox.framework) to your target in Build Phases.
+    
+    //    Then, header file to import: #import <AudioToolbox/AudioServices.h>
+    AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+}
 @end
