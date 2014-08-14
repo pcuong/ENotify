@@ -14,10 +14,6 @@
 		79E238661998A1CA00B47304 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E238641998A1CA00B47304 /* InfoPlist.strings */; };
 		79E238681998A1CA00B47304 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E238671998A1CA00B47304 /* main.m */; };
 		79E2386C1998A1CA00B47304 /* ELCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E2386B1998A1CA00B47304 /* ELCAppDelegate.m */; };
-		79E2386F1998A1CA00B47304 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E2386D1998A1CA00B47304 /* Main_iPhone.storyboard */; };
-		79E238721998A1CA00B47304 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E238701998A1CA00B47304 /* Main_iPad.storyboard */; };
-		79E238751998A1CA00B47304 /* ELCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E238741998A1CA00B47304 /* ELCMasterViewController.m */; };
-		79E238781998A1CA00B47304 /* ELCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E238771998A1CA00B47304 /* ELCDetailViewController.m */; };
 		79E2387A1998A1CA00B47304 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E238791998A1CA00B47304 /* Images.xcassets */; };
 		79E238811998A1CA00B47304 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E238801998A1CA00B47304 /* XCTest.framework */; };
 		79E238821998A1CA00B47304 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E2385B1998A1CA00B47304 /* Foundation.framework */; };
@@ -53,12 +49,6 @@
 		79E238691998A1CA00B47304 /* ENotifyV2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ENotifyV2-Prefix.pch"; sourceTree = "<group>"; };
 		79E2386A1998A1CA00B47304 /* ELCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCAppDelegate.h; sourceTree = "<group>"; };
 		79E2386B1998A1CA00B47304 /* ELCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELCAppDelegate.m; sourceTree = "<group>"; };
-		79E2386E1998A1CA00B47304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		79E238711998A1CA00B47304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		79E238731998A1CA00B47304 /* ELCMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCMasterViewController.h; sourceTree = "<group>"; };
-		79E238741998A1CA00B47304 /* ELCMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELCMasterViewController.m; sourceTree = "<group>"; };
-		79E238761998A1CA00B47304 /* ELCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCDetailViewController.h; sourceTree = "<group>"; };
-		79E238771998A1CA00B47304 /* ELCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELCDetailViewController.m; sourceTree = "<group>"; };
 		79E238791998A1CA00B47304 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		79E2387F1998A1CA00B47304 /* ENotifyV2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ENotifyV2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E238801998A1CA00B47304 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -140,12 +130,6 @@
 			children = (
 				79E2386A1998A1CA00B47304 /* ELCAppDelegate.h */,
 				79E2386B1998A1CA00B47304 /* ELCAppDelegate.m */,
-				79E2386D1998A1CA00B47304 /* Main_iPhone.storyboard */,
-				79E238701998A1CA00B47304 /* Main_iPad.storyboard */,
-				79E238731998A1CA00B47304 /* ELCMasterViewController.h */,
-				79E238741998A1CA00B47304 /* ELCMasterViewController.m */,
-				79E238761998A1CA00B47304 /* ELCDetailViewController.h */,
-				79E238771998A1CA00B47304 /* ELCDetailViewController.m */,
 				79E238791998A1CA00B47304 /* Images.xcassets */,
 				79E238621998A1CA00B47304 /* Supporting Files */,
 			);
@@ -263,9 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79E238721998A1CA00B47304 /* Main_iPad.storyboard in Resources */,
 				79E2387A1998A1CA00B47304 /* Images.xcassets in Resources */,
-				79E2386F1998A1CA00B47304 /* Main_iPhone.storyboard in Resources */,
 				79E238661998A1CA00B47304 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,9 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79E238751998A1CA00B47304 /* ELCMasterViewController.m in Sources */,
 				79E238681998A1CA00B47304 /* main.m in Sources */,
-				79E238781998A1CA00B47304 /* ELCDetailViewController.m in Sources */,
 				79305D751998A63300CB5029 /* ELCRtu.m in Sources */,
 				79E2386C1998A1CA00B47304 /* ELCAppDelegate.m in Sources */,
 			);
@@ -351,22 +331,6 @@
 				79E238651998A1CA00B47304 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		79E2386D1998A1CA00B47304 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79E2386E1998A1CA00B47304 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		79E238701998A1CA00B47304 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79E238711998A1CA00B47304 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		79E238891998A1CA00B47304 /* InfoPlist.strings */ = {
