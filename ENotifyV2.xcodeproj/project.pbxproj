@@ -21,6 +21,9 @@
 		79E2388B1998A1CA00B47304 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E238891998A1CA00B47304 /* InfoPlist.strings */; };
 		79E2388D1998A1CA00B47304 /* ENotifyV2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E2388C1998A1CA00B47304 /* ENotifyV2Tests.m */; };
 		A344CF8473864EF2BD69CBFA /* libPods-ENotifyV2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E75C0C861234B98B25C0B84 /* libPods-ENotifyV2.a */; };
+		C4B3617E199CA25900865F7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B3617D199CA25900865F7A /* Main.storyboard */; };
+		C4B36181199CAB6E00865F7A /* ELCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B36180199CAB6E00865F7A /* ELCLoginViewController.m */; };
+		C4B36183199CB27D00865F7A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B36182199CB27D00865F7A /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,10 @@
 		79E238881998A1CA00B47304 /* ENotifyV2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ENotifyV2Tests-Info.plist"; sourceTree = "<group>"; };
 		79E2388A1998A1CA00B47304 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79E2388C1998A1CA00B47304 /* ENotifyV2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ENotifyV2Tests.m; sourceTree = "<group>"; };
+		C4B3617D199CA25900865F7A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C4B3617F199CAB6E00865F7A /* ELCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCLoginViewController.h; sourceTree = "<group>"; };
+		C4B36180199CAB6E00865F7A /* ELCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCLoginViewController.m; sourceTree = "<group>"; };
+		C4B36182199CB27D00865F7A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4B36183199CB27D00865F7A /* AudioToolbox.framework in Frameworks */,
 				79E2385E1998A1CA00B47304 /* CoreGraphics.framework in Frameworks */,
 				79E238601998A1CA00B47304 /* UIKit.framework in Frameworks */,
 				79E2385C1998A1CA00B47304 /* Foundation.framework in Frameworks */,
@@ -116,6 +124,7 @@
 		79E2385A1998A1CA00B47304 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C4B36182199CB27D00865F7A /* AudioToolbox.framework */,
 				79E2385B1998A1CA00B47304 /* Foundation.framework */,
 				79E2385D1998A1CA00B47304 /* CoreGraphics.framework */,
 				79E2385F1998A1CA00B47304 /* UIKit.framework */,
@@ -132,6 +141,9 @@
 				79E2386B1998A1CA00B47304 /* ELCAppDelegate.m */,
 				79E238791998A1CA00B47304 /* Images.xcassets */,
 				79E238621998A1CA00B47304 /* Supporting Files */,
+				C4B3617D199CA25900865F7A /* Main.storyboard */,
+				C4B3617F199CAB6E00865F7A /* ELCLoginViewController.h */,
+				C4B36180199CAB6E00865F7A /* ELCLoginViewController.m */,
 			);
 			path = ENotifyV2;
 			sourceTree = "<group>";
@@ -247,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4B3617E199CA25900865F7A /* Main.storyboard in Resources */,
 				79E2387A1998A1CA00B47304 /* Images.xcassets in Resources */,
 				79E238661998A1CA00B47304 /* InfoPlist.strings in Resources */,
 			);
@@ -303,6 +316,7 @@
 				79E238681998A1CA00B47304 /* main.m in Sources */,
 				79305D751998A63300CB5029 /* ELCRtu.m in Sources */,
 				79E2386C1998A1CA00B47304 /* ELCAppDelegate.m in Sources */,
+				C4B36181199CAB6E00865F7A /* ELCLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,10 +437,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ENotifyV2/ENotifyV2-Prefix.pch";
 				INFOPLIST_FILE = "ENotifyV2/ENotifyV2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -438,10 +455,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ENotifyV2/ENotifyV2-Prefix.pch";
 				INFOPLIST_FILE = "ENotifyV2/ENotifyV2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
