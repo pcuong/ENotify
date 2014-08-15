@@ -8,10 +8,13 @@
 
 #import "ELCLoginViewController.h"
 #import "ELCAppDelegate.h"
+#import "ELCMainViewController.h"
 #import <CommonCrypto/CommonCrypto.h>
 #import <AFNetworking/AFNetworking.h>
 
 @interface ELCLoginViewController ()
+
+@property (nonatomic) NSString* authToken;
 
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
@@ -51,16 +54,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    id nextView = [segue destinationViewController];
+    if([nextView isKindOfClass:[ELCMainViewController class]]){
+        
+        
+        [[ELCAppDelegate sharedAppDelegate] setAuthToken:self.authToken];
+        
+        NSLog(@"Good");
+        
+    }
+    else {
+        NSLog(@"Bad");
+    }
 }
-*/
 
 - (IBAction)loginButtonTouch:(id)sender {
     
@@ -125,7 +136,7 @@
             if (eResult && [eResult isEqual:@0]) {
                 
                 // Lấy giá trị Token để cho quá trình giao tiếp dữ liệu về sau
-                [[ELCAppDelegate sharedAppDelegate] setAuthToken:[NSString stringWithFormat:@"%@", [authResponse valueForKey:@"Token"]]];
+                self.authToken = [NSString stringWithFormat:@"%@", [authResponse valueForKey:@"Token"]];
                 
                 [self performSegueWithIdentifier:@"showMain" sender:self];
                 

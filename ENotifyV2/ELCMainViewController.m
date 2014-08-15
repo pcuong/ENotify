@@ -22,8 +22,6 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
-        
-        _theApp = [ELCAppDelegate sharedAppDelegate];
     }
     return self;
 }
@@ -37,6 +35,11 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    _theApp = [ELCAppDelegate sharedAppDelegate];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
