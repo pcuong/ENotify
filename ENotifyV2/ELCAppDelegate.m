@@ -11,6 +11,12 @@
 #import <AFNetworking/AFNetworkActivityIndicatorManager.h>
 #import <AudioToolbox/AudioToolbox.h>
 
+@interface ELCAppDelegate()
+
+-(void)initQueryRtuListWithToken:(NSString*)authToken;
+
+@end
+
 @implementation ELCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -63,15 +69,14 @@
     return _authToken;
 }
 
--(BOOL)setAuthToken:(NSString *)authToken
+-(void)setAuthToken:(NSString *)authToken
 {
-    BOOL bSuccess = NO;
     if(_authToken != authToken){
         
-        
+        [self initQueryRtuListWithToken:authToken];
+            
+        _authToken = authToken;
     }
-    
-    return bSuccess;
 }
 
 -(NSDictionary*)alarmList
@@ -80,14 +85,13 @@
 
 }
 
--(BOOL)initQueryRtuList
+-(void)initQueryRtuListWithToken:(NSString*)authToken
 {
-    __block BOOL bSuccess = NO;
     NSURL* restUrl = [NSURL URLWithString:self.baseRESTFulUrl];
     AFHTTPSessionManager* session = [[AFHTTPSessionManager alloc] initWithBaseURL:restUrl];
     session.responseSerializer = [AFJSONResponseSerializer serializer];
     
-    NSString* query = [NSString stringWithFormat:@"GetRtuList?token=%@", self.authToken];
+    NSString* query = [NSString stringWithFormat:@"RtuList?token=%@", authToken];
     [session GET:[query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] parameters:nil  success:^(NSURLSessionDataTask* task, id responseObject)
     {
         
@@ -105,15 +109,15 @@
             
         }
         
-        bSuccess = YES;
         
     } failure:^(NSURLSessionDataTask *task, NSError *error){
         
         NSLog(@"%@", [error localizedDescription]);
         
+        [ELCAppDelegate alert:@"Hệ thống" otherValue:@"Không lấy được danh sách tủ"];
+        
     }];
     
-    return bSuccess;
 }
 
 +(void)alert:(NSString*)title otherValue:(NSString*)message {

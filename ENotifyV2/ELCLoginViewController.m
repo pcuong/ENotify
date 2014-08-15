@@ -125,7 +125,7 @@
             if (eResult && [eResult isEqual:@0]) {
                 
                 // Lấy giá trị Token để cho quá trình giao tiếp dữ liệu về sau
-                [ELCAppDelegate sharedAppDelegate].authToken = [NSString stringWithFormat:@"%@", [authResponse valueForKey:@"Token"]];
+                [[ELCAppDelegate sharedAppDelegate] setAuthToken:[NSString stringWithFormat:@"%@", [authResponse valueForKey:@"Token"]]];
                 
                 [self performSegueWithIdentifier:@"showMain" sender:self];
                 

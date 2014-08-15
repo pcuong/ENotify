@@ -20,10 +20,9 @@
 @property (nonatomic) NSDictionary* rtuDictionary;
 
 -(NSString*)authToken;
--(BOOL)setAuthToken:(NSString*)authToken;
+-(void)setAuthToken:(NSString*)authToken;
 
 -(NSDictionary*)alarmList;
--(BOOL)initQueryRtuList;
 
 +(ELCAppDelegate*)sharedAppDelegate;
 +(void)alert:(NSString*)title otherValue:(NSString*)message;
