@@ -21,6 +21,32 @@
 		79E2388B1998A1CA00B47304 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E238891998A1CA00B47304 /* InfoPlist.strings */; };
 		79E2388D1998A1CA00B47304 /* ENotifyV2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E2388C1998A1CA00B47304 /* ENotifyV2Tests.m */; };
 		A344CF8473864EF2BD69CBFA /* libPods-ENotifyV2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E75C0C861234B98B25C0B84 /* libPods-ENotifyV2.a */; };
+		C4114995199DF5350072F78C /* ELCAddAlarmCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4114994199DF5350072F78C /* ELCAddAlarmCommentViewController.m */; };
+		C4114998199DF5780072F78C /* ELCAlarmCommentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4114997199DF5780072F78C /* ELCAlarmCommentListViewController.m */; };
+		C411499B199DFDA80072F78C /* ELCRtuListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C411499A199DFDA80072F78C /* ELCRtuListViewController.m */; };
+		C411499E199DFE900072F78C /* ELCRtuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C411499D199DFE8F0072F78C /* ELCRtuTableViewCell.m */; };
+		C41149A1199E02610072F78C /* ELCAlarm.m in Sources */ = {isa = PBXBuildFile; fileRef = C41149A0199E02610072F78C /* ELCAlarm.m */; };
+		C41F64E2199D64990090636B /* ELCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41F64E1199D64990090636B /* ELCMainViewController.m */; };
+		C41F64E8199D64E00090636B /* ELCAppConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41F64E7199D64E00090636B /* ELCAppConfigViewController.m */; };
+		C41F64EB199D6B020090636B /* ELCAlarmTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C41F64EA199D6B020090636B /* ELCAlarmTableViewCell.m */; };
+		C41F64EE199D6B9D0090636B /* ELCAlarmDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41F64ED199D6B9D0090636B /* ELCAlarmDetailViewController.m */; };
+		C41F64FE199D6B9D0090636B /* App.bmp in Resources */ = {isa = PBXBuildFile; fileRef = C41F64F0199D6B9D0090636B /* App.bmp */; };
+		C41F64FF199D6B9D0090636B /* App.png in Resources */ = {isa = PBXBuildFile; fileRef = C41F64F1199D6B9D0090636B /* App.png */; };
+		C41F6500199D6B9D0090636B /* App120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = C41F64F2199D6B9D0090636B /* App120x120.png */; };
+		C41F6501199D6B9D0090636B /* App80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = C41F64F3199D6B9D0090636B /* App80x80.png */; };
+		C41F6502199D6B9D0090636B /* back-25.png in Resources */ = {isa = PBXBuildFile; fileRef = C41F64F4199D6B9D0090636B /* back-25.png */; };
+		C41F6503199D6B9D0090636B /* back-512.png in Resources */ = {isa = PBXBuildFile; fileRef = C41F64F5199D6B9D0090636B /* back-512.png */; };
+		C41F6504199D6B9D0090636B /* ElcomTek.png in Resources */ = {isa = PBXBuildFile; fileRef = C41F64F6199D6B9D0090636B /* ElcomTek.png */; };
+		C41F6505199D6B9D0090636B /* error-25.png in Resources */ = {isa = PBXBuildFile; fileRef = C41F64F7199D6B9D0090636B /* error-25.png */; };
+		C41F6506199D6B9D0090636B /* Error_18.png in Resources */ = {isa = PBXBuildFile; fileRef = C41F64F8199D6B9D0090636B /* Error_18.png */; };
+		C41F6507199D6B9D0090636B /* ov_lock.png in Resources */ = {isa = PBXBuildFile; fileRef = C41F64F9199D6B9D0090636B /* ov_lock.png */; };
+		C41F6508199D6B9D0090636B /* ov_unlock.png in Resources */ = {isa = PBXBuildFile; fileRef = C41F64FA199D6B9D0090636B /* ov_unlock.png */; };
+		C41F6509199D6B9D0090636B /* ov_warn.png in Resources */ = {isa = PBXBuildFile; fileRef = C41F64FB199D6B9D0090636B /* ov_warn.png */; };
+		C41F650A199D6B9D0090636B /* Reply_Error_18.png in Resources */ = {isa = PBXBuildFile; fileRef = C41F64FC199D6B9D0090636B /* Reply_Error_18.png */; };
+		C41F650B199D6B9D0090636B /* Reply_Ok_18.png in Resources */ = {isa = PBXBuildFile; fileRef = C41F64FD199D6B9D0090636B /* Reply_Ok_18.png */; };
+		C41F650D199D6B9D0090636B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41F650C199D6B9D0090636B /* MapKit.framework */; };
+		C41F6510199D6B9D0090636B /* ELCMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41F650F199D6B9D0090636B /* ELCMapViewController.m */; };
+		C41F6512199D6B9D0090636B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41F6511199D6B9D0090636B /* CoreLocation.framework */; };
 		C4B3617E199CA25900865F7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B3617D199CA25900865F7A /* Main.storyboard */; };
 		C4B36181199CAB6E00865F7A /* ELCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B36180199CAB6E00865F7A /* ELCLoginViewController.m */; };
 		C4B36183199CB27D00865F7A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B36182199CB27D00865F7A /* AudioToolbox.framework */; };
@@ -58,6 +84,42 @@
 		79E238881998A1CA00B47304 /* ENotifyV2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ENotifyV2Tests-Info.plist"; sourceTree = "<group>"; };
 		79E2388A1998A1CA00B47304 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79E2388C1998A1CA00B47304 /* ENotifyV2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ENotifyV2Tests.m; sourceTree = "<group>"; };
+		C4114993199DF5350072F78C /* ELCAddAlarmCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAddAlarmCommentViewController.h; sourceTree = "<group>"; };
+		C4114994199DF5350072F78C /* ELCAddAlarmCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAddAlarmCommentViewController.m; sourceTree = "<group>"; };
+		C4114996199DF5780072F78C /* ELCAlarmCommentListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAlarmCommentListViewController.h; sourceTree = "<group>"; };
+		C4114997199DF5780072F78C /* ELCAlarmCommentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAlarmCommentListViewController.m; sourceTree = "<group>"; };
+		C4114999199DFDA80072F78C /* ELCRtuListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCRtuListViewController.h; sourceTree = "<group>"; };
+		C411499A199DFDA80072F78C /* ELCRtuListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCRtuListViewController.m; sourceTree = "<group>"; };
+		C411499C199DFE8F0072F78C /* ELCRtuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCRtuTableViewCell.h; sourceTree = "<group>"; };
+		C411499D199DFE8F0072F78C /* ELCRtuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCRtuTableViewCell.m; sourceTree = "<group>"; };
+		C411499F199E02610072F78C /* ELCAlarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ELCAlarm.h; path = ENotifyV2/ELCAlarm.h; sourceTree = "<group>"; };
+		C41149A0199E02610072F78C /* ELCAlarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ELCAlarm.m; path = ENotifyV2/ELCAlarm.m; sourceTree = "<group>"; };
+		C41F64E0199D64990090636B /* ELCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCMainViewController.h; sourceTree = "<group>"; };
+		C41F64E1199D64990090636B /* ELCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCMainViewController.m; sourceTree = "<group>"; };
+		C41F64E6199D64E00090636B /* ELCAppConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAppConfigViewController.h; sourceTree = "<group>"; };
+		C41F64E7199D64E00090636B /* ELCAppConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAppConfigViewController.m; sourceTree = "<group>"; };
+		C41F64E9199D6B020090636B /* ELCAlarmTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAlarmTableViewCell.h; sourceTree = "<group>"; };
+		C41F64EA199D6B020090636B /* ELCAlarmTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAlarmTableViewCell.m; sourceTree = "<group>"; };
+		C41F64EC199D6B9D0090636B /* ELCAlarmDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAlarmDetailViewController.h; sourceTree = "<group>"; };
+		C41F64ED199D6B9D0090636B /* ELCAlarmDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAlarmDetailViewController.m; sourceTree = "<group>"; };
+		C41F64F0199D6B9D0090636B /* App.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = App.bmp; sourceTree = "<group>"; };
+		C41F64F1199D6B9D0090636B /* App.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App.png; sourceTree = "<group>"; };
+		C41F64F2199D6B9D0090636B /* App120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App120x120.png; sourceTree = "<group>"; };
+		C41F64F3199D6B9D0090636B /* App80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App80x80.png; sourceTree = "<group>"; };
+		C41F64F4199D6B9D0090636B /* back-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-25.png"; sourceTree = "<group>"; };
+		C41F64F5199D6B9D0090636B /* back-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-512.png"; sourceTree = "<group>"; };
+		C41F64F6199D6B9D0090636B /* ElcomTek.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ElcomTek.png; sourceTree = "<group>"; };
+		C41F64F7199D6B9D0090636B /* error-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error-25.png"; sourceTree = "<group>"; };
+		C41F64F8199D6B9D0090636B /* Error_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Error_18.png; sourceTree = "<group>"; };
+		C41F64F9199D6B9D0090636B /* ov_lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ov_lock.png; sourceTree = "<group>"; };
+		C41F64FA199D6B9D0090636B /* ov_unlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ov_unlock.png; sourceTree = "<group>"; };
+		C41F64FB199D6B9D0090636B /* ov_warn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ov_warn.png; sourceTree = "<group>"; };
+		C41F64FC199D6B9D0090636B /* Reply_Error_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reply_Error_18.png; sourceTree = "<group>"; };
+		C41F64FD199D6B9D0090636B /* Reply_Ok_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reply_Ok_18.png; sourceTree = "<group>"; };
+		C41F650C199D6B9D0090636B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C41F650E199D6B9D0090636B /* ELCMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCMapViewController.h; sourceTree = "<group>"; };
+		C41F650F199D6B9D0090636B /* ELCMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCMapViewController.m; sourceTree = "<group>"; };
+		C41F6511199D6B9D0090636B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C4B3617D199CA25900865F7A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C4B3617F199CAB6E00865F7A /* ELCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCLoginViewController.h; sourceTree = "<group>"; };
 		C4B36180199CAB6E00865F7A /* ELCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCLoginViewController.m; sourceTree = "<group>"; };
@@ -69,6 +131,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C41F6512199D6B9D0090636B /* CoreLocation.framework in Frameworks */,
+				C41F650D199D6B9D0090636B /* MapKit.framework in Frameworks */,
 				C4B36183199CB27D00865F7A /* AudioToolbox.framework in Frameworks */,
 				79E2385E1998A1CA00B47304 /* CoreGraphics.framework in Frameworks */,
 				79E238601998A1CA00B47304 /* UIKit.framework in Frameworks */,
@@ -96,6 +160,8 @@
 				79305D781998A98400CB5029 /* Common.h */,
 				79305D731998A63300CB5029 /* ELCRtu.h */,
 				79305D741998A63300CB5029 /* ELCRtu.m */,
+				C411499F199E02610072F78C /* ELCAlarm.h */,
+				C41149A0199E02610072F78C /* ELCAlarm.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -124,6 +190,8 @@
 		79E2385A1998A1CA00B47304 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C41F6511199D6B9D0090636B /* CoreLocation.framework */,
+				C41F650C199D6B9D0090636B /* MapKit.framework */,
 				C4B36182199CB27D00865F7A /* AudioToolbox.framework */,
 				79E2385B1998A1CA00B47304 /* Foundation.framework */,
 				79E2385D1998A1CA00B47304 /* CoreGraphics.framework */,
@@ -137,6 +205,7 @@
 		79E238611998A1CA00B47304 /* ENotifyV2 */ = {
 			isa = PBXGroup;
 			children = (
+				C41F64EF199D6B9D0090636B /* Images */,
 				79E2386A1998A1CA00B47304 /* ELCAppDelegate.h */,
 				79E2386B1998A1CA00B47304 /* ELCAppDelegate.m */,
 				79E238791998A1CA00B47304 /* Images.xcassets */,
@@ -144,6 +213,24 @@
 				C4B3617D199CA25900865F7A /* Main.storyboard */,
 				C4B3617F199CAB6E00865F7A /* ELCLoginViewController.h */,
 				C4B36180199CAB6E00865F7A /* ELCLoginViewController.m */,
+				C41F64E0199D64990090636B /* ELCMainViewController.h */,
+				C41F64E1199D64990090636B /* ELCMainViewController.m */,
+				C41F64E6199D64E00090636B /* ELCAppConfigViewController.h */,
+				C41F64E7199D64E00090636B /* ELCAppConfigViewController.m */,
+				C41F64E9199D6B020090636B /* ELCAlarmTableViewCell.h */,
+				C41F64EA199D6B020090636B /* ELCAlarmTableViewCell.m */,
+				C41F64EC199D6B9D0090636B /* ELCAlarmDetailViewController.h */,
+				C41F64ED199D6B9D0090636B /* ELCAlarmDetailViewController.m */,
+				C41F650E199D6B9D0090636B /* ELCMapViewController.h */,
+				C41F650F199D6B9D0090636B /* ELCMapViewController.m */,
+				C4114993199DF5350072F78C /* ELCAddAlarmCommentViewController.h */,
+				C4114994199DF5350072F78C /* ELCAddAlarmCommentViewController.m */,
+				C4114996199DF5780072F78C /* ELCAlarmCommentListViewController.h */,
+				C4114997199DF5780072F78C /* ELCAlarmCommentListViewController.m */,
+				C4114999199DFDA80072F78C /* ELCRtuListViewController.h */,
+				C411499A199DFDA80072F78C /* ELCRtuListViewController.m */,
+				C411499C199DFE8F0072F78C /* ELCRtuTableViewCell.h */,
+				C411499D199DFE8F0072F78C /* ELCRtuTableViewCell.m */,
 			);
 			path = ENotifyV2;
 			sourceTree = "<group>";
@@ -175,6 +262,27 @@
 				79E238891998A1CA00B47304 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C41F64EF199D6B9D0090636B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C41F64F0199D6B9D0090636B /* App.bmp */,
+				C41F64F1199D6B9D0090636B /* App.png */,
+				C41F64F2199D6B9D0090636B /* App120x120.png */,
+				C41F64F3199D6B9D0090636B /* App80x80.png */,
+				C41F64F4199D6B9D0090636B /* back-25.png */,
+				C41F64F5199D6B9D0090636B /* back-512.png */,
+				C41F64F6199D6B9D0090636B /* ElcomTek.png */,
+				C41F64F7199D6B9D0090636B /* error-25.png */,
+				C41F64F8199D6B9D0090636B /* Error_18.png */,
+				C41F64F9199D6B9D0090636B /* ov_lock.png */,
+				C41F64FA199D6B9D0090636B /* ov_unlock.png */,
+				C41F64FB199D6B9D0090636B /* ov_warn.png */,
+				C41F64FC199D6B9D0090636B /* Reply_Error_18.png */,
+				C41F64FD199D6B9D0090636B /* Reply_Ok_18.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +367,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C41F650B199D6B9D0090636B /* Reply_Ok_18.png in Resources */,
+				C41F64FF199D6B9D0090636B /* App.png in Resources */,
 				C4B3617E199CA25900865F7A /* Main.storyboard in Resources */,
+				C41F650A199D6B9D0090636B /* Reply_Error_18.png in Resources */,
+				C41F6503199D6B9D0090636B /* back-512.png in Resources */,
+				C41F6501199D6B9D0090636B /* App80x80.png in Resources */,
+				C41F6507199D6B9D0090636B /* ov_lock.png in Resources */,
+				C41F6502199D6B9D0090636B /* back-25.png in Resources */,
+				C41F6506199D6B9D0090636B /* Error_18.png in Resources */,
+				C41F6509199D6B9D0090636B /* ov_warn.png in Resources */,
+				C41F6505199D6B9D0090636B /* error-25.png in Resources */,
+				C41F6508199D6B9D0090636B /* ov_unlock.png in Resources */,
+				C41F6504199D6B9D0090636B /* ElcomTek.png in Resources */,
+				C41F64FE199D6B9D0090636B /* App.bmp in Resources */,
 				79E2387A1998A1CA00B47304 /* Images.xcassets in Resources */,
+				C41F6500199D6B9D0090636B /* App120x120.png in Resources */,
 				79E238661998A1CA00B47304 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,9 +435,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C411499E199DFE900072F78C /* ELCRtuTableViewCell.m in Sources */,
 				79E238681998A1CA00B47304 /* main.m in Sources */,
+				C4114998199DF5780072F78C /* ELCAlarmCommentListViewController.m in Sources */,
+				C4114995199DF5350072F78C /* ELCAddAlarmCommentViewController.m in Sources */,
+				C411499B199DFDA80072F78C /* ELCRtuListViewController.m in Sources */,
+				C41F64E2199D64990090636B /* ELCMainViewController.m in Sources */,
+				C41F6510199D6B9D0090636B /* ELCMapViewController.m in Sources */,
 				79305D751998A63300CB5029 /* ELCRtu.m in Sources */,
+				C41149A1199E02610072F78C /* ELCAlarm.m in Sources */,
 				79E2386C1998A1CA00B47304 /* ELCAppDelegate.m in Sources */,
+				C41F64EE199D6B9D0090636B /* ELCAlarmDetailViewController.m in Sources */,
+				C41F64E8199D64E00090636B /* ELCAppConfigViewController.m in Sources */,
+				C41F64EB199D6B020090636B /* ELCAlarmTableViewCell.m in Sources */,
 				C4B36181199CAB6E00865F7A /* ELCLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
