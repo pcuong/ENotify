@@ -9,13 +9,23 @@
 #import <Foundation/Foundation.h>
 #import "Common.h"
 
+@class ELCAlarm;
+
+@interface ELCCategory : NSObject
+
+@property int categoryId;
+@property (nonatomic) NSString* name;
+@property (nonatomic) NSString* fullName;
+
+@end
+
 @interface ELCRtu : NSObject
 
 @property(readonly) int rtuId;
 @property NSString* name;
 @property int categoryId;
+@property (nonatomic) ELCCategory* category;
 @property ERtuStatus status;
-@property bool online;
 
 -(id)initWithId:(int)nRtuId;
 +(NSString*)getRtuStatusText:(ERtuStatus)eStatus;

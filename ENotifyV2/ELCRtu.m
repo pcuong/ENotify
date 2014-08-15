@@ -18,6 +18,8 @@
     self->_rtuId = nRtuId;
     self->_name = [[NSString alloc]init];
     self->_status = eOK;
+    self->_categoryId = -1;
+    self->_category = nil;
     
     
     return self;

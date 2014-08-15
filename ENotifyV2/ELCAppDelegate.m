@@ -24,6 +24,7 @@
     
     // Dia chi RESTFul
     _baseRESTFulUrl = @"http://118.70.169.1:8778/RESTFul";
+    //_baseRESTFulUrl = @"http://192.168.1.5:8778/RESTFul";
     
     [AFNetworkActivityIndicatorManager sharedManager].enabled = TRUE;
     
@@ -55,6 +56,64 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(NSString*)authToken
+{
+    return _authToken;
+}
+
+-(BOOL)setAuthToken:(NSString *)authToken
+{
+    BOOL bSuccess = NO;
+    if(_authToken != authToken){
+        
+        
+    }
+    
+    return bSuccess;
+}
+
+-(NSDictionary*)alarmList
+{
+    return nil;
+
+}
+
+-(BOOL)initQueryRtuList
+{
+    __block BOOL bSuccess = NO;
+    NSURL* restUrl = [NSURL URLWithString:self.baseRESTFulUrl];
+    AFHTTPSessionManager* session = [[AFHTTPSessionManager alloc] initWithBaseURL:restUrl];
+    session.responseSerializer = [AFJSONResponseSerializer serializer];
+    
+    NSString* query = [NSString stringWithFormat:@"GetRtuList?token=%@", self.authToken];
+    [session GET:[query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] parameters:nil  success:^(NSURLSessionDataTask* task, id responseObject)
+    {
+        
+        NSArray* result = (NSArray*)responseObject;
+        if(!result)
+        {
+            NSLog(@"RtuList: %@", responseObject);
+            
+            return ;
+        }
+        
+        for (NSObject* obj in result) {
+            
+            
+            
+        }
+        
+        bSuccess = YES;
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error){
+        
+        NSLog(@"%@", [error localizedDescription]);
+        
+    }];
+    
+    return bSuccess;
 }
 
 +(void)alert:(NSString*)title otherValue:(NSString*)message {

@@ -9,9 +9,21 @@
 #import <UIKit/UIKit.h>
 
 @interface ELCAppDelegate : UIResponder <UIApplicationDelegate>
+{
+    NSString* _authToken;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 @property (readonly, nonatomic) NSString* baseRESTFulUrl;
+
+
+@property (nonatomic) NSDictionary* rtuDictionary;
+
+-(NSString*)authToken;
+-(BOOL)setAuthToken:(NSString*)authToken;
+
+-(NSDictionary*)alarmList;
+-(BOOL)initQueryRtuList;
 
 +(ELCAppDelegate*)sharedAppDelegate;
 +(void)alert:(NSString*)title otherValue:(NSString*)message;
